@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 40px 77px;
+}
+
+nav h1 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main div {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.image {
+    width: 85%;
+    height: auto;
+    margin: auto;
+}
+
+div h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0;
+}
+
+div p {
+    width: 70%;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 36px 0 64px;
+}
+
+div button {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 24px 44px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    div h1 {
+        font-size: 3rem;
+    }
+
+    div p {
+        font-size: 1.1rem;
+    }
+
+    div button {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    div h1 {
+        font-size: 2rem;
+    }
+
+    div p {
+        font-size: 0.7rem;
+    }
+
+    div button {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    * {
+        margin: 0;
+    }
+
+    body {
+        margin: 0 25px;
+    }
+
+    nav {
+        position: relative;
+        margin: 20px 0;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 50px 0;
+    }
+    
+    main div {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    
+    .image {
+        width: 90%;
+    }
+    
+    div h1 {
+        font-size: 48px;
+    }
+    
+    div p {
+        width: 80%;
+        font-size: 18px;
+        margin: 30px 0 65px;
+    }
+    
+    div button {
+        font-size: 14px;
+    }
+}
