@@ -2,6 +2,26 @@
     box-sizing: border-box;
 }
 
+/* unvisited link */
+a:link {
+    color: inherit;
+}
+      
+/* visited link */
+a:visited {
+    color: inherit;
+}
+      
+/* mouse over link */
+a:hover {
+    color: #8d8d8d;
+}
+      
+/* selected link */
+a:active {
+    color: inherit;
+}
+
 body {
     font-family: 'Space Mono', monospace;
     margin: 0;
@@ -64,6 +84,27 @@ div button {
     background-color: #333;
     color: #fff;
     border: none;
+    cursor: pointer;
+}
+
+div button:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #BDBDBD;
 }
 
 @media (max-width: 1024px) {
@@ -137,5 +178,10 @@ div button {
     
     div button {
         font-size: 14px;
+    }
+
+    footer {
+        position: relative;
+        height: 50px;
     }
 }
