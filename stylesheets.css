@@ -107,7 +107,11 @@ footer h5 {
     color: #BDBDBD;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+    main div:nth-child(2) {
+        width: 45%;
+    }
+
     div h1 {
         font-size: 3rem;
     }
@@ -122,6 +126,10 @@ footer h5 {
 }
 
 @media (max-width: 768px) {
+    main div:nth-child(2) {
+        width: 40%;
+    }
+
     div h1 {
         font-size: 2rem;
     }
@@ -161,6 +169,10 @@ footer h5 {
         height: auto;
         margin: 20px 0;
     }
+
+    main div:nth-child(2) {
+        width: 100%;
+    }
     
     .image {
         width: 90%;
@@ -179,7 +191,7 @@ footer h5 {
     div button {
         font-size: 14px;
     }
-    
+
     footer {
         position: relative;
         height: 50px;
